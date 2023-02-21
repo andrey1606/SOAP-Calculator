@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  background-color: #f8f8f8;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+input,
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px #888;
+}
+
+input {
+  width: 100px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+p {
+  font-weight: bold;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px #888;
+  width: 150px;
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+@model int?
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculator</title>
+</head>
+<body>    
+
+<div>
+    <form action="@Url.Action("Calculate", "Calculator")" method="post">
+        @Html.DropDownList("operation", new SelectList(new string[] { "add", "subtract", "multiply", "divide" }))
+        <input type="number" name="a" />
+        <input type="number" name="b" />
+        <button type="submit">Get Result</button>
+    </form>
+</div>
+
+
+    <div>
+        @if (Model!= null)
+        {
+            <p>Result: @Model</p>
+        }
+    </div>
+</body>
+</html>
